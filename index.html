@@ -15,6 +15,10 @@
             background-size: cover;
             height: 100vh;
         }
+
+        #display-information {
+            display: none;
+        }
     </style>
 </head>
 
@@ -28,11 +32,11 @@
                 </div>
             </div>
         </form>
-        <div class="weather-status text-white text-center">
-            <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+        <div id="display-information" class="weather-status text-white text-center">
+            <img id="weather-icon" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
             <h1 id="show-city-name">Dhaka</h1>
             <h3><span id="temperature">38.06</span>&deg;C</h3>
-            <h1 class="lead">Clouds</h1>
+            <h1 id="weather-condition" class="lead">Clouds</h1>
         </div>
     </div>
 
